@@ -42,9 +42,9 @@ tab_corner = []
 side = int(input('Side\'s number : '))
 while i < side + 1:
     if i != side:
-        tab_point.append({'x': int(input(f'Enter x to point {i + 1} : ')), 'y': int(input(f'Enter y to point {i + 1} : '))})
+        tab_point.append({'x': float(input(f'Enter x to point {i + 1} : ')), 'y': float(input(f'Enter y to point {i + 1} : '))})
     else:
-        tab_point.append({'x': int(input(f'Enter x to M point : ')), 'y': int(input(f'Enter y to M point : '))})
+        tab_point.append({'x': float(input(f'Enter x to M point : ')), 'y': float(input(f'Enter y to M point : '))})
     i += 1
 while j < len(tab_point) - 1:
     tab_vector.append(lb_get_vector(tab_point[j]['x'], tab_point[j]['y'], tab_point[-1]['x'], tab_point[-1]['y']))
